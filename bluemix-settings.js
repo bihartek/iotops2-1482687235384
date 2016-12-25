@@ -51,7 +51,7 @@ var settings = module.exports = {
     // Serve up the welcome page
     //httpStatic: path.join(__dirname,"public"),
 
-    functionGlobalContext: { },
+    functionGlobalContext: {  crc:require('crc') },
 
     storageModule: require("./couchstorage")
 }
@@ -92,6 +92,3 @@ if (!couchService) {
 }    
 settings.couchUrl = couchService.credentials.url;
 
-functionGlobalContext: {
-  crc:require('crc')
-}
