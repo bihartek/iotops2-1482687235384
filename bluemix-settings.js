@@ -92,4 +92,6 @@ if (!couchService) {
 }    
 settings.couchUrl = couchService.credentials.url;
 
-
+functionGlobalContext: {
+  crc:require('crc')
+},
