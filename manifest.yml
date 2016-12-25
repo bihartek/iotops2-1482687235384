@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: iotops2
+  host: iotops2
+  disk_quota: 1024M
+  services:
+  - iotops2-cloudantNoSQLDB
+  - iotops2-iotf-service
